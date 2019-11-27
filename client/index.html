@@ -80,7 +80,10 @@
   </body>
   <script src="app/domain/negocioacao/Negociacao.js"></script>
   <script>
-    var n1 = new Negociacao(new Date(), 5, 700);
+    let n1 = new Negociacao(new Date(), 5, 700);
+    n1._quantidade = 10000000;
+    n1.data.setDate(11);
+    console.log(Object.isFrozen(n1));
     console.log(n1, n1.quantidade, n1.valor);
   </script>
 </html>
