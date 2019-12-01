@@ -78,12 +78,8 @@
       <tfoot></tfoot>
     </table>
   </body>
-  <script src="app/domain/negocioacao/Negociacao.js"></script>
-  <script>
-    let n1 = new Negociacao(new Date(), 5, 700);
-    n1._quantidade = 10000000;
-    n1.data.setDate(11);
-    console.log(Object.isFrozen(n1));
-    console.log(n1, n1.quantidade, n1.valor);
-  </script>
+  <script src="app/ui/converters/DateConverter.js"></script>
+  <script src="app/domain/negociacao/Negociacao.js"></script>
+  <script src="app/controllers/NegociacaoController.js"></script>
+  <script src="app/app.js"></script>
 </html>
